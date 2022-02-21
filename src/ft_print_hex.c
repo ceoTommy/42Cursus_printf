@@ -6,7 +6,7 @@
 /*   By: tford <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/20 16:23:24 by tford             #+#    #+#             */
-/*   Updated: 2022/02/20 19:20:37 by tford            ###   ########.fr       */
+/*   Updated: 2022/02/21 19:18:47 by tford            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 //cap is ussually either 'a' or 'A'
 //determines whether its capitalised or not
-static void print_hex_unit(unsigned int hex_num, int as_upper)
+static void print_hex_unit(unsigned long hex_num, int as_upper)
 {
 	char	c;
 
@@ -35,13 +35,13 @@ static void print_hex_unit(unsigned int hex_num, int as_upper)
 //takes a decimal number and converts it too hex
 //displays letters capitalized if as_upper !0
 //returns amount printed
-int	ft_print_hex(unsigned int hex_num, int as_upper)
+int	ft_print_hex(unsigned long hex_num, int as_upper)
 {
 	int	n_printed;
 
     if (hex_num >= 16)
     {
-        n_printed = ft_print_hex(hex_num/16, as_upper) + 1;
+        n_printed = ft_print_hex(hex_num / 16, as_upper) + 1;
     }
 	else
 	{

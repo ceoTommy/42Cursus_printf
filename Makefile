@@ -7,7 +7,9 @@ INCLUDE_DIR = include/
 SRC_FILES = ft_printf_core \
 				ft_print_char \
 				ft_print_str \
+				ft_print_ptr \
 				ft_print_hex \
+				ft_print_num \
 
 C_FILES = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
 O_FILES = $(addsuffix .o, $(SRC_FILES))
