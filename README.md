@@ -25,10 +25,6 @@ ft_printf("%s is %d years old!", name, age);
 Terminal Output: 
 Tommy is 20 years old!
 ```
-
-## Limitations
-tbd
-
 ## Use
 1. Clone the project into your working directory
 2. `#include "ft_printf.h` as a header in your C program
