@@ -1,4 +1,6 @@
 # ft_printf
+*Language: C*
+
 'int ft_printf(const char \*, ...)`
 ## Functionality
 Allows you to print varibles and strings into the terminal, it returns the number of characters printed. 
